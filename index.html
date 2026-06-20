@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            body{
+                font-family: Arial,sans-serif;
+                padding: 10px;/*keep 10px empty space inside the page from all sides*/
+                background-color:pink;
+            }
+            .con
+            {
+                width:100%;
+                border: 2px solid #000;
+            }
+
+            .header
+            {
+                display: flex;
+                justify-content: space-between;/*pushes item to far ends-logo goes to left and menu goes to right*/
+                align-items: center;/*everything stays in same middle line-perfect center line*/
+                padding: 15px;
+                border-bottom: 2px solid #000;
+            }
+
+            .logo
+            {
+                width: 60px;
+                height: 60px;
+                background: #ddd;
+                text-align:center;
+                line-height: 60px;/*distance between text lines*/
+            }
+
+            .menu
+            {
+                width: 600px;
+                height: 40px;
+                 background: #ddd;
+                text-align:center;
+                line-height: 10px;
+            
+            }
+
+            .menu li
+            {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .menu a
+            {
+                text-decoration: none;
+                color:#aa2222;
+                font-weight: bold;
+                font-size:20px;
+            }
+
+            .menu a:hover{
+                color:orange;
+            }
+
+            .banner
+            {
+                 width:100%;
+                height: 350px;
+                border-bottom: 2px solid #000;
+                display: flex;
+                justify-content: center;/*brings all items to center horizontally*/
+                align-items: center;
+                font-size: 24px;
+            }
+
+            .content
+            {
+                display: flex;
+                padding: 20px;
+                gap:20px;
+                border-bottom: 2px solid #000;
+            }
+
+            .left
+            {
+                width: 30%;
+                background-color: white;
+            }
+
+            .small-box
+            {
+                width:580px;
+                height: 122px;
+                
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                               
+            }
+
+            .right
+            {
+                width: 70%;
+                border: 2px solid #000;
+                min-height: 260px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: bisque;
+                font-size: 30px;
+                padding:40px;
+                
+            }
+
+            .footer-boxes
+            {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                border-bottom: 2px solid #000;
+            }
+
+            .footer-box
+            {
+                width: 22%;
+                height: 120px;
+                border: 2px solid #000;
+                display: flex;
+                justify-content: center;/*give equal spacing around elements*/
+                align-items: center;
+                background-color: chocolate;
+            }
+
+            .copyright
+            {
+                text-align: center;
+                padding: 15px;
+            }
+            
+            @media (max-width:768px)
+            {
+                .content
+                 {
+                    flex-direction: column;
+                 }
+
+                 .left,
+                 .right
+                 {
+                    width: 100%;
+                 }
+
+                 .footer-boxes
+                 {
+                    flex-wrap: wrap;
+                    gap: 15px;
+                 }
+
+                 .footer-box
+                 {
+                    width:48%;
+                 }
+            }
+
+            @media (max-width:480px)
+            {
+                .header
+                {
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                .menu
+                {
+                    width: 100%;
+                }
+
+                .footer-boxes
+                {
+                  width: 100%;
+                }
+
+                .banner
+                {
+                    height: 120px;
+                    font-size: 18px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="con">
+            <div class="header">
+                <div class="logo"><img src="LOGO.jpeg"  width="60px" height="60px"> </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner"><img src="banner_img_home.jpg" width="2000" height="351"></div>
+            <div class="content">
+                <div class="left">
+                    <div class="small-box"><img src="box1_banner.png" width="580" height="150"></div>
+                    <div class="small-box"><img src="box2h.webp" width="580" height="220"></div>
+                </div>
+                <div class="right">
+                   <div class="r1"><h1>Welcome to NutriVeg</h1></div>
+                   <div class="r2"><p><b>your trusted companion for healthy vegetarian living. Our platform helps you create balanced meal plans, discover nutritious recipes, track daily nutrition, and develop healthy eating habits. Whether you are a student, working professional, fitness enthusiast, or someone who simply wants to eat better, NutriVeg provides personalized guidance to make healthy eating simple, enjoyable, and sustainable. Start your journey toward a healthier lifestyle with fresh, nutritious, and delicious vegetarian meals
+                    </p></div>
+                </div>
+            </div>
+
+            <div class="footer-boxes">
+                <div class="footer-box">1</div>
+                <div class="footer-box">2</div>
+                <div class="footer-box">3</div>
+                <div class="footer-box">4</div>
+            </div>
+            
+            <div class="copyright">
+                @ 2026 Your Website name
+            </div>
+
+        </div>
+    </body>
+</html>
